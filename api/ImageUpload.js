@@ -42,7 +42,7 @@ router.post("/",upload.single('Image'),(req, res, next)=>{
     {
         console.log("File exists")
         img = req.file
-         imagepath = "https://157.245.94.80:5000/static/images/"+req.file.filename
+         imagepath = "https://192.46.214.39:5000/static/images/"+req.file.filename
          res.status(200).json({
              imagepath:imagepath
          })
